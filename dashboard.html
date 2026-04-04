@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Labdox LMS</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-wrap">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <p class="eyebrow">Labdox LMS</p>
+        <h1 id="welcomeText">Welcome</h1>
+        <p id="userEmail" class="subtext">Loading user...</p>
+      </div>
+
+      <div class="topbar-right">
+        <button id="refreshBtn" class="secondary-btn" type="button">Refresh</button>
+        <button id="logoutBtn" class="primary-btn" type="button">Logout</button>
+      </div>
+    </header>
+
+    <!-- STATUS MESSAGE -->
+    <p id="pageStatus" class="page-status"></p>
+
+    <!-- STATS -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <p>Total XP</p>
+        <h2 id="xpValue">0</h2>
+      </div>
+
+      <div class="stat-card">
+        <p>Courses Enrolled</p>
+        <h2 id="courseCount">0</h2>
+      </div>
+
+      <div class="stat-card">
+        <p>Average Progress</p>
+        <h2 id="progressValue">0%</h2>
+      </div>
+    </section>
+
+    <!-- PROFILE + QUICK INFO -->
+    <section class="content-grid">
+      <div class="card">
+        <div class="card-head">
+          <h3>Profile</h3>
+        </div>
+        <div class="profile-list">
+          <div class="profile-row">
+            <span>Full Name</span>
+            <strong id="profileName">-</strong>
+          </div>
+          <div class="profile-row">
+            <span>Status</span>
+            <strong id="profileStatus">-</strong>
+          </div>
+          <div class="profile-row">
+            <span>Role</span>
+            <strong id="profileRole">Student</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Learning Snapshot</h3>
+        </div>
+        <div class="snapshot-list">
+          <div class="snapshot-item">
+            <span>Latest Progress</span>
+            <strong id="latestProgress">0%</strong>
+          </div>
+          <div class="snapshot-item">
+            <span>Enrolled Courses</span>
+            <strong id="latestCourseCount">0</strong>
+          </div>
+          <div class="snapshot-item">
+            <span>XP Status</span>
+            <strong id="xpStatusText">Getting started</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="section-block">
+      <div class="section-head">
+        <a href="lesson.html?lesson_id=YOUR_LESSON_ID&course_id=${course.id}">Open Lesson</a>
+        <h2>Your Courses</h2>
+        <p>Courses fetched from Supabase enrollments and courses tables.</p>
+      </div>
+
+      <div id="coursesContainer" class="courses-grid">
+        <div class="empty-card">Loading courses...</div>
+      </div>
+    </section>
+
+    <!-- PROGRESS LIST -->
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Progress Overview</h2>
+        <p>Course progress data from your database.</p>
+      </div>
+
+      <div id="progressContainer" class="progress-list">
+        <div class="empty-card">Loading progress...</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

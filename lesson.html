@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson | Labdox LMS</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-wrap">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Labdox LMS</p>
+        <h1 id="lessonTitle">Lesson</h1>
+        <p id="lessonDesc" class="subtext">Loading lesson...</p>
+      </div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <button id="dashboardBtn" class="secondary-btn" type="button">Dashboard</button>
+        <button id="backBtn" class="secondary-btn" type="button">Back</button>
+      </div>
+    </header>
+
+    <p id="lessonStatus" class="page-status"></p>
+
+    <section class="content-grid">
+      <div class="card">
+        <div class="card-head">
+          <h3>Lesson Details</h3>
+        </div>
+
+        <div class="profile-list">
+          <div class="profile-row">
+            <span>Course ID</span>
+            <strong id="courseIdText">-</strong>
+          </div>
+          <div class="profile-row">
+            <span>Lesson Type</span>
+            <strong id="lessonTypeText">-</strong>
+          </div>
+          <div class="profile-row">
+            <span>Estimated Time</span>
+            <strong id="lessonTimeText">-</strong>
+          </div>
+          <div class="profile-row">
+            <span>Status</span>
+            <strong id="lessonProgressText">Not started</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Actions</h3>
+        </div>
+
+        <div class="snapshot-list">
+          <div class="snapshot-item">
+            <span>Reward</span>
+            <strong>+10 XP</strong>
+          </div>
+          <div class="snapshot-item">
+            <span>Progress Update</span>
+            <strong>Auto tracked</strong>
+          </div>
+          <div class="snapshot-item">
+            <span>Completion</span>
+            <strong>One click</strong>
+          </div>
+        </div>
+
+        <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
+          <button id="completeBtn" class="primary-btn" type="button">Mark Complete</button>
+          <button id="startBtn" class="secondary-btn" type="button">Mark In Progress</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Lesson Content</h2>
+        <p>This lesson page is connected with progress and XP tracking.</p>
+      </div>
+
+      <div class="card">
+        <div id="lessonContentBox">
+          <p>This is your lesson page. Later you can add video, PDF, quiz, or text blocks here.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="lesson.js"></script>
+</body>
+</html>
