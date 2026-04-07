@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Development Track",
+    "short_description": "Learn HTML, CSS, JavaScript and responsive UI.",
+    "description": "A complete beginner to intermediate frontend learning path designed for practical project building.",
+    "status": "published",
+    "visibility": "public",
+    "difficulty_level": "Beginner",
+    "category": "Web Development",
+    "language": "English",
+    "course_modules": [
+      {
+        "id": 101,
+        "title": "HTML Basics",
+        "description": "Introduction to HTML structure, semantic tags, and page building.",
+        "position": 1,
+        "estimated_minutes": 60,
+        "lessons": [
+          {
+            "id": 1001,
+            "title": "What is HTML?",
+            "lesson_type": "text",
+            "estimated_minutes": 10,
+            "is_preview": true
+          },
+          {
+            "id": 1002,
+            "title": "HTML Tags and Elements",
+            "lesson_type": "video",
+            "estimated_minutes": 20,
+            "is_preview": false
+          },
+          {
+            "id": 1003,
+            "title": "Forms and Input Fields",
+            "lesson_type": "assignment",
+            "estimated_minutes": 30,
+            "is_preview": false
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "title": "CSS Fundamentals",
+        "description": "Learn styling, selectors, box model, flexbox and grid.",
+        "position": 2,
+        "estimated_minutes": 80,
+        "lessons": [
+          {
+            "id": 1004,
+            "title": "CSS Syntax",
+            "lesson_type": "text",
+            "estimated_minutes": 12,
+            "is_preview": true
+          },
+          {
+            "id": 1005,
+            "title": "Flexbox and Grid",
+            "lesson_type": "video",
+            "estimated_minutes": 25,
+            "is_preview": false
+          },
+          {
+            "id": 1006,
+            "title": "Responsive Layout Practice",
+            "lesson_type": "interactive",
+            "estimated_minutes": 30,
+            "is_preview": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "AI Automation Basics",
+    "short_description": "Start with AI tools and workflow automation.",
+    "description": "Understand automation flows, prompts, AI workflows, and practical productivity use cases.",
+    "status": "published",
+    "visibility": "public",
+    "difficulty_level": "Beginner",
+    "category": "AI Automation",
+    "language": "English",
+    "course_modules": [
+      {
+        "id": 201,
+        "title": "AI Foundations",
+        "description": "Basic understanding of AI tools, prompts and outputs.",
+        "position": 1,
+        "estimated_minutes": 50,
+        "lessons": [
+          {
+            "id": 2001,
+            "title": "Intro to AI Tools",
+            "lesson_type": "video",
+            "estimated_minutes": 15,
+            "is_preview": true
+          },
+          {
+            "id": 2002,
+            "title": "Prompt Basics",
+            "lesson_type": "interactive",
+            "estimated_minutes": 20,
+            "is_preview": false
+          }
+        ]
+      },
+      {
+        "id": 202,
+        "title": "Workflow Automation",
+        "description": "Learn the basics of automation logic and workflow building.",
+        "position": 2,
+        "estimated_minutes": 70,
+        "lessons": [
+          {
+            "id": 2003,
+            "title": "Automation Concepts",
+            "lesson_type": "text",
+            "estimated_minutes": 12,
+            "is_preview": true
+          },
+          {
+            "id": 2004,
+            "title": "Build Your First Flow",
+            "lesson_type": "assignment",
+            "estimated_minutes": 35,
+            "is_preview": false
+          },
+          {
+            "id": 2005,
+            "title": "Automation Quiz",
+            "lesson_type": "quiz",
+            "estimated_minutes": 20,
+            "is_preview": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Project Readiness Program",
+    "short_description": "Projects, submissions, reviews and career readiness support.",
+    "description": "A structured program focused on project execution, reviews, mentor sessions and real-world readiness.",
+    "status": "published",
+    "visibility": "public",
+    "difficulty_level": "Intermediate",
+    "category": "Career Growth",
+    "language": "English",
+    "course_modules": [
+      {
+        "id": 301,
+        "title": "Portfolio Foundations",
+        "description": "Learn how to present your skills and projects effectively.",
+        "position": 1,
+        "estimated_minutes": 55,
+        "lessons": [
+          {
+            "id": 3001,
+            "title": "Building a Strong Portfolio",
+            "lesson_type": "video",
+            "estimated_minutes": 18,
+            "is_preview": true
+          },
+          {
+            "id": 3002,
+            "title": "Resume Improvement Task",
+            "lesson_type": "assignment",
+            "estimated_minutes": 30,
+            "is_preview": false
+          }
+        ]
+      },
+      {
+        "id": 302,
+        "title": "Mentor Review and Live Sessions",
+        "description": "Attend guided sessions and improve based on expert review.",
+        "position": 2,
+        "estimated_minutes": 65,
+        "lessons": [
+          {
+            "id": 3003,
+            "title": "Mock Review Session",
+            "lesson_type": "live_class",
+            "estimated_minutes": 25,
+            "is_preview": false
+          },
+          {
+            "id": 3004,
+            "title": "Final Readiness Checklist",
+            "lesson_type": "resource",
+            "estimated_minutes": 10,
+            "is_preview": true
+          }
+        ]
+      }
+    ]
+  }
+]

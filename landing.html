@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Labdox LMS | Career OS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <div class="logo-mark">L</div>
+        <div>
+          <h2>Labdox LMS</h2>
+          <p>Career OS</p>
+        </div>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#journey">Journey</a>
+        <a href="#courses">Courses</a>
+        <a href="#gamification">Gamification</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#contact">Apply</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <span class="tag">AI Powered Learning Platform</span>
+        <h1>
+          Learn, Build & Grow with
+          <span>Labdox Career OS</span>
+        </h1>
+        <p>
+          A modern learning platform for Web Development and AI Automation interns
+          with structured courses, gamification, analytics, and guided career growth.
+        </p>
+
+        <div class="hero-actions">
+          <button class="primary-btn" type="button" onclick="scrollToSection('contact')">Apply Now</button>
+          <a href="login.html" class="secondary-btn">Login</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card reveal">
+            <h3>12+</h3>
+            <p>Learning Modules</p>
+          </div>
+          <div class="stat-card reveal">
+            <h3>4 Roles</h3>
+            <p>Access Control</p>
+          </div>
+          <div class="stat-card reveal">
+            <h3>AI</h3>
+            <p>Smart Assistant</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="dashboard-card glass reveal">
+          <div class="dashboard-top">
+            <h3>Student Dashboard</h3>
+            <span class="status-pill">Active</span>
+          </div>
+
+          <div class="progress-block">
+            <div class="progress-head">
+              <span>Course Progress</span>
+              <span id="progressText">68%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="mainProgress"></div>
+            </div>
+          </div>
+
+          <div class="xp-card">
+            <div>
+              <p>Total XP</p>
+              <h2 id="xpCount">1280</h2>
+            </div>
+            <button class="mini-btn" type="button" onclick="addXP(25)">+25 XP</button>
+          </div>
+
+          <div class="lesson-list">
+            <div class="lesson-item">
+              <span>Module 1 - HTML & CSS Basics</span>
+              <span class="done">Completed</span>
+            </div>
+            <div class="lesson-item">
+              <span>Module 2 - JavaScript Interactions</span>
+              <span class="live">Today 7 PM</span>
+            </div>
+            <div class="lesson-item">
+              <span>Module 3 - AI Automation Flow</span>
+              <span class="pending">Pending</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Core Features</span>
+        <h2>Everything needed for a modern LMS</h2>
+        <p>
+          Built for guided learning, intern management, skill growth, engagement,
+          and performance tracking.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <div class="feature-card reveal">
+          <h3>Easy Onboarding</h3>
+          <p>Students can join smoothly and start their guided learning journey with a structured dashboard.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h3>Course Management</h3>
+          <p>Organized courses, modules, lessons, assignments, quizzes, and live sessions in one place.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h3>Gamification</h3>
+          <p>XP, levels, badges, streaks, and progress indicators keep learners motivated and consistent.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h3>Interactive Learning</h3>
+          <p>Live classes, practice tasks, real projects, and engaging content improve learning outcomes.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h3>Analytics Dashboard</h3>
+          <p>Track completion rate, quiz performance, attendance, and assignment progress effectively.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h3>AI Assistant</h3>
+          <p>Instant doubt solving, practice support, learning guidance, and smarter task assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="journey">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Onboarding Flow</span>
+        <h2>Simple and clear user journey</h2>
+        <p>From joining the program to growing skills with guided learning and real outcomes.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="step">1</div>
+          <h3>Register</h3>
+          <p>Start by joining the platform and creating your learner identity.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="step">2</div>
+          <h3>Get Access</h3>
+          <p>Receive dashboard access to modules, classes, assignments, and growth metrics.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="step">3</div>
+          <h3>Learn & Practice</h3>
+          <p>Complete lessons, attend live sessions, and submit project-based tasks.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="step">4</div>
+          <h3>Track Growth</h3>
+          <p>Earn XP, improve performance, and build industry-ready skills with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Course Explorer</span>
+        <h2>Explore Learning Tracks</h2>
+        <p>Click on any course to view modules and lessons dynamically.</p>
+      </div>
+
+      <div class="course-explorer-wrap">
+        <div class="course-sidebar reveal">
+          <div class="course-sidebar-head">
+            <h3>Available Courses</h3>
+            <p id="courseCount">Loading...</p>
+          </div>
+          <div id="courseList" class="course-list"></div>
+        </div>
+
+        <div class="course-viewer reveal">
+          <div id="courseViewerEmpty" class="course-empty-state">
+            <div>
+              <h3>Select a course</h3>
+              <p>Choose a course from the left to view modules and lessons.</p>
+            </div>
+          </div>
+
+          <div id="courseViewer" class="course-viewer-inner" style="display:none;">
+            <div class="course-viewer-top">
+              <div>
+                <h3 id="selectedCourseTitle">Course Title</h3>
+                <p id="selectedCourseMeta">Category • Difficulty • Language • Visibility</p>
+              </div>
+              <span id="selectedCourseStatus" class="badge blue">Published</span>
+            </div>
+
+            <p id="selectedCourseDesc" class="selected-course-desc"></p>
+            <div id="moduleList" class="module-accordion"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="gamification">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Gamification Engine</span>
+        <h2>Learning that feels rewarding</h2>
+        <p>Engage learners with measurable progress, competition, and motivation.</p>
+      </div>
+
+      <div class="game-grid">
+        <div class="game-card reveal">
+          <h3>XP Rules</h3>
+          <ul class="clean-list">
+            <li>Complete lesson → +10 XP</li>
+            <li>Submit task → +25 XP</li>
+            <li>Complete quiz → +30 XP</li>
+            <li>Attend live session → +20 XP</li>
+            <li>Complete module → +100 XP</li>
+          </ul>
+        </div>
+
+        <div class="game-card reveal">
+          <h3>Your Current Level</h3>
+          <div class="level-circle" id="levelCircle">Lv 4</div>
+          <p class="center-text">Consistent Learner Badge Unlocked</p>
+        </div>
+
+        <div class="game-card reveal">
+          <h3>Leaderboard</h3>
+          <div class="leaderboard">
+            <div class="leader-item">
+              <span>1. Aisha</span>
+              <strong>1540 XP</strong>
+            </div>
+            <div class="leader-item">
+              <span>2. Rohan</span>
+              <strong>1430 XP</strong>
+            </div>
+            <div class="leader-item highlight">
+              <span>3. You</span>
+              <strong id="userXpLeader">1280 XP</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="analytics">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Analytics</span>
+        <h2>Track growth and engagement</h2>
+        <p>Measure progress across learning, assessments, classes, and assignments.</p>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="analytics-card reveal">
+          <h3>Completion Rate</h3>
+          <div class="big-number">82%</div>
+          <p>Average learning completion across active learners.</p>
+        </div>
+        <div class="analytics-card reveal">
+          <h3>Quiz Accuracy</h3>
+          <div class="big-number">76%</div>
+          <p>Performance based on the latest course assessments.</p>
+        </div>
+        <div class="analytics-card reveal">
+          <h3>Live Attendance</h3>
+          <div class="big-number">91%</div>
+          <p>Student participation in scheduled mentor-led sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="ai-box reveal">
+        <div>
+          <span class="tag">AI Support</span>
+          <h2>Ask the AI learning assistant</h2>
+          <p>
+            Get help with doubts, task explanations, practice guidance,
+            and learning support directly inside the platform.
+          </p>
+        </div>
+
+        <div class="ai-chat">
+          <div class="chat-bubble user">How do I improve my frontend skills faster?</div>
+          <div class="chat-bubble bot">Focus on HTML, CSS, JavaScript projects, regular practice, and consistent module completion.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Apply Now</span>
+        <h2>Join the Platform</h2>
+        <p>Fill in your details and request access to Labdox LMS / Career OS.</p>
+      </div>
+
+      <div class="join-form-wrap">
+        <div class="join-form-left reveal">
+          <span class="join-mini-tag">// Request Access</span>
+          <h3>Start your learning journey with Labdox.</h3>
+          <p>Apply once, get reviewed, and continue your journey through the LMS.</p>
+
+          <div class="join-points">
+            <div class="join-point">
+              <span>◈</span>
+              <div>
+                <strong>Fast Review</strong>
+                <p>We review applications within 24 hours.</p>
+              </div>
+            </div>
+            <div class="join-point">
+              <span>⬡</span>
+              <div>
+                <strong>Invite Access</strong>
+                <p>Selected applicants get access to the platform.</p>
+              </div>
+            </div>
+            <div class="join-point">
+              <span>◬</span>
+              <div>
+                <strong>Skill Growth</strong>
+                <p>Structured learning, gamification, and progress tracking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="join-form-card reveal">
+          <form id="applyForm" class="join-form">
+            <div class="join-form-row">
+              <div class="join-form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+
+              <div class="join-form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+
+            <div class="join-form-row">
+              <div class="join-form-group">
+                <label for="role">Role Interested In</label>
+                <select id="role" name="role" required>
+                  <option value="">Select role</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="AI Automation">AI Automation</option>
+                  <option value="Student">Student</option>
+                  <option value="Instructor">Instructor</option>
+                  <option value="Mentor">Mentor</option>
+                  <option value="Organization">Organization</option>
+                </select>
+              </div>
+
+              <div class="join-form-group">
+                <label for="college">College / Organization</label>
+                <input type="text" id="college" name="college" placeholder="Your college or organization" />
+              </div>
+            </div>
+
+            <div class="join-form-group">
+              <label for="message">Why should we choose you?</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write about your skills, goals, projects, and interest..." required></textarea>
+            </div>
+
+            <div class="join-form-check">
+              <label>
+                <input type="checkbox" id="agreeTerms" required />
+                I agree to the terms and confirm the above details are correct.
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="primary-btn" id="submitBtn">Submit Application</button>
+              <p id="formStatus" class="form-status"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content reveal">
+      <h2>Ready to build the future of learning?</h2>
+      <p>Join the Web Development & AI Automation Interns team.</p>
+
+      <div class="footer-actions">
+        <button class="primary-btn" type="button" onclick="scrollToSection('contact')">Apply Now 🚀</button>
+        <a href="login.html" class="secondary-btn">Login</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Labdox. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="landing.js"></script>
+</body>
+</html>
