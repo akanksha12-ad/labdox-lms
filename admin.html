@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin CMS</title>
+  <style>
+    body{font-family:Arial,sans-serif;background:#f8fafc;padding:30px}
+    .box{max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:16px}
+    input,textarea,select,button{width:100%;padding:12px;margin:8px 0}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    h2{margin-top:24px}
+    #status{margin-top:10px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Admin CMS</h1>
+
+    <h2>Add Course</h2>
+    <input id="courseTitle" placeholder="Course title">
+    <textarea id="courseDesc" placeholder="Course description"></textarea>
+    <select id="courseStatus">
+      <option value="draft">Draft</option>
+      <option value="published">Published</option>
+    </select>
+    <button onclick="addCourse()">Add Course</button>
+
+    <h2>Add Module</h2>
+    <select id="moduleCourse"></select>
+    <input id="moduleTitle" placeholder="Module title">
+    <textarea id="moduleDesc" placeholder="Module description"></textarea>
+    <input id="modulePosition" type="number" value="1" placeholder="Position">
+    <button onclick="addModule()">Add Module</button>
+
+    <h2>Add Lesson</h2>
+    <select id="lessonModule"></select>
+    <input id="lessonTitle" placeholder="Lesson title">
+    <select id="lessonType">
+      <option value="text">Text</option>
+      <option value="video">Video</option>
+      <option value="quiz">Quiz</option>
+      <option value="assignment">Assignment</option>
+    </select>
+    <textarea id="lessonContent" placeholder="Lesson content"></textarea>
+    <input id="lessonPosition" type="number" value="1" placeholder="Position">
+    <button onclick="addLesson()">Add Lesson</button>
+
+    <div id="status"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
